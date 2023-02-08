@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript masyvai</title>
+
+</head>
+
+<body>
+    <script>
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        // Pirma užduotis
+
+        let array = [];
+        let counterA = 0;
+        let counterB = 0;
+        let counterC = 0;
+        let counterD = 0;
+
+        for (let i = 0; i < 200; i++) {
+            array[i] = rand(1, 4)
+
+            if (array[i] === 1) {
+                array[i] = 'A'
+                counterA++;
+            }
+            if (array[i] === 2) {
+                array[i] = 'B'
+                counterB++;
+            }
+            if (array[i] === 3) {
+                array[i] = 'C'
+                counterC++;
+            }
+            if (array[i] === 4) {
+                array[i] = 'D'
+                counterD++;
+            }
+        }
+
+        document.write('<br/> Raidės: ' + array + '<br/>' + 'Raidžių "A" kiekis: ' + counterA + '<br/>' + 'Raidžių "B" kiekis: ' + counterB + '<br/>' + 'Raidžių "C" kiekis: ' + counterC + '<br/>' + 'Raidžių "D" kiekis: ' + counterD);
+
+
+
+
+        // Antra užduotis
+
+        document.write(array.sort());
+
+
+
+
+        // Trečia užduotis
+
+        let array1 = [];
+        let array2 = [];
+        let array3 = [];
+        let sudetasarray = [];
+
+        for (let i = 0; i < 200; i++) {
+            array1[i] = rand(1, 4);
+
+            if (array1[i] === 1) {
+                array1[i] = 'A';
+            }
+            if (array1[i] === 2) {
+                array1[i] = 'B';
+            }
+            if (array1[i] === 3) {
+                array1[i] = 'C';
+            }
+            if (array1[i] === 4) {
+                array1[i] = 'D';
+            }
+        }
+
+        for (let i = 0; i < 200; i++) {
+            array2[i] = rand(1, 4);
+
+            if (array2[i] === 1) {
+                array2[i] = 'A';
+            }
+            if (array2[i] === 2) {
+                array2[i] = 'B';
+            }
+            if (array2[i] === 3) {
+                array2[i] = 'C';
+            }
+            if (array2[i] === 4) {
+                array2[i] = 'D';
+            }
+        }
+
+        for (let i = 0; i < 200; i++) {
+            array3[i] = rand(1, 4);
+
+            if (array3[i] === 1) {
+                array3[i] = 'A';
+            }
+            if (array3[i] === 2) {
+                array3[i] = 'B';
+            }
+            if (array3[i] === 3) {
+                array3[i] = 'C';
+            }
+            if (array3[i] === 4) {
+                array3[i] = 'D';
+            }
+        }
+
+        let counterReiksmes = 0;
+
+        for (let i = 0; i < 200; i++) {
+            sudetasarray[i] = array1[i] + array2[i] + array3[i];
+            if (array1[i] != array2[i] && array2[i] != array3[i] && array3[i] != array1[i]) {
+                counterReiksmes++;
+            }
+
+        }
+
+        document.write('Trijų raidžių kombinacijų array:' + sudetasarray + '<br/>');
+        document.write('Elementų su unikaliom reikšmėm kiekis:' + counterReiksmes + '<br/>');
+
+
+        sudetasarray.sort();
+
+        let counterKombinacijos = 0;
+
+        for (let i = 0; i < 200; i++) {
+            if (sudetasarray[i] != sudetasarray[i - 1] && sudetasarray[i] != sudetasarray[i + 1]) {
+                counterKombinacijos++;
+            }
+        }
+
+        document.write('Elementų su unikaliom kombinacijom kiekis:' + counterKombinacijos);
+
+
+
+
+        // Ketvirta užduotis
+
+        array = [];
+
+        for (let i = 0; i < 100; i++) {
+            let random = rand(100, 999);
+            while (array.includes(random)) {
+                random = rand(100, 999);
+            }
+            array[i] = random;
+        }
+
+        array1 = [];
+
+        for (let i = 0; i < 100; i++) {
+            let random = rand(100, 999);
+            while (array1.includes(random)) {
+                random = rand(100, 999);
+            }
+            array1[i] = random;
+        }
+
+        document.write('Pirmasis array su unikaliom reikšmėm:' + array + '<br/>');
+        document.write('Antrasis array su unikaliom reikšmėm:' + array1 + '<br/>');
+
+
+
+
+
+        // Penkta užduotis
+
+        let newarray = [];
+
+        for (let i = 0; i < array.length; i++) {
+            if (!array1.includes(array[i])) {
+                newarray.push(array[i]);
+            }
+        }
+
+        document.write(newarray);
+
+
+
+
+
+        // Šešta užduotis
+
+        newarray = [];
+
+        for (let i = 0; i < array.length; i++) {
+            if (array1.includes(array[i])) {
+                newarray.push(array[i]);
+            }
+        }
+
+        document.write(newarray);
+
+
+    </script>
+</body>
+
+</html>

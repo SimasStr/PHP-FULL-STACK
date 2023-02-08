@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedarbo dienų kalendorius</title>
+    <style>
+        h1 {
+            color: #315496;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 75%; 
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 35px;
+        }
+
+        table td {
+            text-align: center;
+            padding: 2px 10px;
+            border-top: 2px solid #c2cee1;
+            border-left: 2px solid#c2cee1;
+        }
+
+        tr.menuo td {
+            color: white;
+            background-color: #315496;
+        }
+
+        tr.savaite {
+            border-left: none;
+            background-color: #8eaadc;
+            color: white;
+        }
+
+        tr.savaite td {
+            border: none;
+        }
+
+        td.tuscias_langelis {
+            background-color: #dae1f3;
+            color: #dae1f3;
+        }
+
+        td.diena {
+            font-weight: bold;
+        }
+
+        table td.nedarbo_diena {
+            background-color: #f8cbac;
+            color: red;
+            font-weight: bold;
+        }
+
+        tr td:last-child {
+            border-right: 2px solid #c2cee1;
+        }
+
+        table tr:last-child td {
+            border-bottom: 2px solid #c2cee1;
+        }
+
+        tr.savaite td:first-child {
+            border-left: 2px solid #c2cee1
+        }
+
+        .column {
+            float: left;
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2022 metų kalendorius</h1>
+    <div class="container">
+        <div class="column">
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Sausis</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="nedarbo_diena">1</td>
+                        <td class="diena">2</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">31</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Balandis</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="nedarbo_diena">17</td>
+                    </tr>
+                    <tr>
+                        <td class="nedarbo_diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Liepa</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="nedarbo_diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="diena">31</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Spalis</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">31</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="column">
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Vasaris</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="nedarbo_diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">28</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Gegužė</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="nedarbo_diena">1</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">30</td>
+                        <td class="diena">31</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Rugpjūtis</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                    </tr>
+                    <tr>
+                        <td class="nedarbo_diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="diena">31</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Lapkritis</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="nedarbo_diena">1</td>
+                        <td class="nedarbo_diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Kovas</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="nedarbo_diena">11</td>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Birželis</td>
+                    </tr>
+                    <tr class="diena_of_savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                        <td class="diena">5</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                        <td class="diena">12</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                        <td class="diena">19</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="nedarbo_diena">24</td>
+                        <td class="diena">25</td>
+                        <td class="diena">26</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Rugsėjis</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="diena">24</td>
+                        <td class="diena">25</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr class="menuo">
+                        <td colspan="7">Gruodis</td>
+                    </tr>
+                    <tr class="savaite">
+                        <td>P</td>
+                        <td>A</td>
+                        <td>T</td>
+                        <td>K</td>
+                        <td>Pe</td>
+                        <td>Š</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="tuscias_langelis"></td>
+                        <td class="diena">1</td>
+                        <td class="diena">2</td>
+                        <td class="diena">3</td>
+                        <td class="diena">4</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">5</td>
+                        <td class="diena">6</td>
+                        <td class="diena">7</td>
+                        <td class="diena">8</td>
+                        <td class="diena">9</td>
+                        <td class="diena">10</td>
+                        <td class="diena">11</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">12</td>
+                        <td class="diena">13</td>
+                        <td class="diena">14</td>
+                        <td class="diena">15</td>
+                        <td class="diena">16</td>
+                        <td class="diena">17</td>
+                        <td class="diena">18</td>
+                    </tr>
+                    <tr>
+                        <td class="diena">19</td>
+                        <td class="diena">20</td>
+                        <td class="diena">21</td>
+                        <td class="diena">22</td>
+                        <td class="diena">23</td>
+                        <td class="nedarbo_diena">24</td>
+                        <td class="nedarbo_diena">25</td>
+                    </tr>
+                    <tr>
+                        <td class="nedarbo_diena">26</td>
+                        <td class="diena">27</td>
+                        <td class="diena">28</td>
+                        <td class="diena">29</td>
+                        <td class="diena">30</td>
+                        <td class="diena">31</td>
+                        <td class="tuscias_langelis"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
