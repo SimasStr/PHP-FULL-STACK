@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+
+<body>
+    <script>
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        class Vaisius {
+            constructor() {
+                this.dydis = rand(5, 25);
+                this.prakastas = false;
+                this.id = rand(1000000, 9999999);
+            }
+            prakasti() {
+                this.prakastas = true;
+            }
+        }
+
+        class Krepsys {
+            static vaisiai = [];
+            static removedVaisiai = [];
+            static pripildyti() {
+                for (let i = 0; i < 20; i++) {
+                    this.vaisiai.push(new Vaisius);
+                }
+                this.vaisiai.sort(function (a, b) {
+                    return b.dydis - a.dydis;
+                });
+            }
+            static isimti() {
+                this.removedVaisiai.push(this.vaisiai.shift());
+            }
+            static papildyti(elemQty = 20) {
+                if (this.vaisiai.length === 20) return;
+                const qty = elemQty - this.vaisiai.length;
+                for (let i = 0; i < qty; i++) {
+                    this.vaisiai.push(new Vaisius);
+                }
+            }
+        }
+
+
+        const grauztukai = new Map();
+        Krepsys.pripildyti();
+        console.log(Krepsys.vaisiai);
+        Krepsys.isimti();
+        Krepsys.isimti();
+        console.log(Krepsys.vaisiai);
+        console.log(Krepsys.removedVaisiai);
+        Krepsys.papildyti();
+        Krepsys.removedVaisiai.map((vais) => vais.prakasti());
+        grauztukai.set(Vaisius.id, Krepsys.removedVaisiai);
+        console.log(grauztukai.get());
+    </script>
+</body>
+
+</html>
